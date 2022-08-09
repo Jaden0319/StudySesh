@@ -12,6 +12,7 @@
 		EF66E5FA28A2056800894981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66E5F928A2056800894981 /* ViewController.swift */; };
 		EF66E5FF28A2056C00894981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF66E5FE28A2056C00894981 /* Assets.xcassets */; };
 		EF66E60228A2056C00894981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF66E60028A2056C00894981 /* LaunchScreen.storyboard */; };
+		EF66E60B28A208FC00894981 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EF66E60A28A208FC00894981 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF66E60B28A208FC00894981 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,9 @@
 			dependencies = (
 			);
 			name = StudySession;
+			packageProductDependencies = (
+				EF66E60A28A208FC00894981 /* SnapKit */,
+			);
 			productName = StudySession;
 			productReference = EF66E5F228A2056800894981 /* StudySession.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +113,9 @@
 				Base,
 			);
 			mainGroup = EF66E5E928A2056800894981;
+			packageReferences = (
+				EF66E60928A208FC00894981 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = EF66E5F328A2056800894981 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -346,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF66E60928A208FC00894981 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF66E60A28A208FC00894981 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF66E60928A208FC00894981 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF66E5EA28A2056800894981 /* Project object */;
 }
